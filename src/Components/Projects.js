@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Project from "./project";
+import data from './Data.json';
+import ProjectCard from "./ProjectCard";
 function Projects() {
-  const [projectData, setProjectData] = useState([]);
   return (
     <div className="main">
       {/* <!-- aboutme --> */}
-      <div class="about-me">
+      <div className="about-me">
         <h2 >
           <strong>
             <u>About Me : </u>
@@ -22,8 +22,8 @@ function Projects() {
       </div>
       <hr />
       <div className="projects-section">
-        {projectData.map((item) => {
-          return <Project />;
+        {data.map((item) => {
+          return <ProjectCard key={item.id} props={item}/>            
         })}
       </div>
     </div>
