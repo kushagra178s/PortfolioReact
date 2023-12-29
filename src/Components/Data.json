@@ -1,0 +1,14 @@
+[
+  {
+    "title": "InfoNews",
+    "techStack": "ReactJs, HTML, Css , JavaScript",
+    "githublink": "https://github.com/kushagra178s/infoNews",
+    "liveLink": "https://infonews-project.netlify.app/",
+    "Priority": "1",
+    "projectDescription": [
+      "A News website that serves its users with the latest news on various topics like Technology and Sports.",
+      "This application is made with the help of newsApi and technologies like ReactJs and bootstrap are used here as well for the design and implementation of the overall website."
+    ],
+    "pictures": []
+  }
+]
