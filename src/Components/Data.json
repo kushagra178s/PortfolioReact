@@ -39,7 +39,7 @@
       "A web-based notes-taking app that can take notes from the user and store it within browser local storage so even if the magic notes app window is closed or the browser is closed the notes will remain.",
       "In this app, users will be able to store their notes and delete them as well."
     ],
-    "pictures": ["magicnotes_used.png"]
+    "pictures": ["magicnotes_front.png"]
   },
   {
     "id":4,

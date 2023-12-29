@@ -43,20 +43,31 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
   gap: 20px; /* Adjust the gap between the boxes */
+  padding: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .projects-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
-  width: 90%; /* Adjust the width as needed */
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid teal;
+  color: white;
+  background-color: #38444d;
+  padding: 10px;
+  font-weight: 500;
+  border: 4px solid #e80d94;
+  border-radius: 1%;
+  margin: 10px; /* Optional spacing between cards */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
   transition: transform 0.2s ease-in-out;
-  box-shadow: #282c34;
-  /* Add any other styling you want for the card */
 }
-
+.card-title {
+  text-align: center;
+  /* text-decoration: underline; */
+}
 .card:hover {
   transform: scale(1.05);
 }
@@ -66,7 +77,10 @@ a {
   justify-content: space-between;
   margin-top: 10px;
 }
+
 .picture-container img {
-  width: 48%; /* Adjust the width as needed */
+  /* width: 48%; Adjust the width as needed */
+  width: 100%;
+  height: 25%;
   margin-bottom: 10px;
 }

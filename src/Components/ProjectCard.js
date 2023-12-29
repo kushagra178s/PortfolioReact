@@ -1,58 +1,36 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./ProjectCard.css"; // Import your existing CSS file for ProjectCard
-
 
 const ProjectCard = (props) => {
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-  console.log(props.props.title);
+  console.log(props.props.githublink);
   return (
     <div className="card">
       <div className="picture-container">
-        {props.props.pictures.length > 1 ? (
-          <Slider {...sliderSettings}>
-            {props.props.pictures.map((picture, index) => (
-              <div key={index}>
-                <img src={require("./pictures/"+picture)} alt={`Project ${index + 1}`} />
-              </div>
-            ))}
-          </Slider>
-        ) : (
-          <img src={props.props.pictures[0]} alt={`Project 1`} />
-        )}
+        <img src = {require("./pictures/"+props.props.pictures[0])} alt="" />
+      
       </div>
-      <h2>{props.props.title}</h2>
-      <p>Tech Stack: {props.props.techStack}</p>
+      <h2 className="card-title">{props.props.title}</h2>
+      <p>Tech Stack: [ {props.props.techStack} ]</p>
       <p>
-        Github Link:{" "}
         <a
-          href={props.props.githubLink}
+          href={props.props.githublink}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {props.props.githubLink}
+          <em><u>Github Link</u></em>
         </a>
       </p>
-      <p>
-        Live Link:{" "}
+      {props.props.liveLink.length>0?(<p>
+        
         <a
           href={props.props.liveLink}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {props.props.liveLink}
+          Live Link
         </a>
-      </p>
-      <p>Priority: {props.props.priority}</p>
-      <p>
+      </p>):("")}
+      {/* <p>Priority: {props.props.priority}</p> */}
+      {props.props.videoLink.length>0?<p>
         Video Link:{" "}
         <a
           href={props.props.videoLink}
@@ -61,12 +39,12 @@ const ProjectCard = (props) => {
         >
           {props.props.videoLink}
         </a>
-      </p>
+      </p>:("")}
 
-      <h3>Project Description:</h3>
-      <ul>
+      <h2>Project Description:</h2>
+      <ul style={{listStyle:"inherit", padding:"15px"}}>
         {props.props.projectDescription.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li  key={index}>{item}</li>
         ))}
       </ul>
     </div>
