@@ -56,4 +56,19 @@
     ],
     "pictures": ["Moviesapi_frontpage.png"]
   }
+  ,
+  {
+    "id": 5,
+    "title": "LiftSimulator",
+    "techStack": "HTML, Css , JavaScript, tailwindcss",
+    "githublink": "https://github.com/kushagra178s/Lift-Simulation/tree/mybranch",
+    "liveLink": "https://liftsimulator-project.netlify.app/",
+    "Priority": "1",
+    "videoLink": "",
+    "projectDescription": [
+      "Develop a lift simulator project that realistically models elevator movements, considering factors like acceleration, deceleration, and door operations.",
+      "Create a user-friendly interface allowing easy input of floor requests and simulation of various scenarios. "
+    ],
+    "pictures": ["liftsimulator.png"]
+  }
 ]
