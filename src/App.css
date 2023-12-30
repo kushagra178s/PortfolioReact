@@ -84,6 +84,7 @@ a {
   }
 }
 
+
 .card {
   color: white;
   background-color: #38444d;
@@ -122,9 +123,15 @@ a {
 
 .picture-container img {
   /* width: 48%; Adjust the width as needed */
-  width: 100%;
+  /* width: 90%; */
   height: 25%;
   margin-bottom: 10px;
+}
+
+.picture-container>button
+{
+  background-color: #282c34;
+  border: 2px solid #e80d94;
 }
 .footer {
   justify-content: center;

@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ProjectCard = (props) => {
-  console.log(props.props.githublink);
+  // console.log(props.props.githublink);
+  const [imagesIndex, setImagesIndex] = useState(0);
+  const numberOfImages = props.props.pictures.length;
+
+  function handleImagesSlider(action) {
+    if(action==1) {
+      setImagesIndex( ((imagesIndex+1)%numberOfImages));
+    }
+    else {
+      let newImagesIndex = imagesIndex;
+      if(imagesIndex-1 < 0) {
+        newImagesIndex = numberOfImages;
+      }
+      setImagesIndex( ((newImagesIndex-1)%numberOfImages))
+    }
+  }
+
   return (
     <div className="card">
       <div className="picture-container">
-        <img src={require("./pictures/" + props.props.pictures[0])} alt="" />
+        {numberOfImages>1?<button onClick={()=>(handleImagesSlider(-1))}>⬅️</button>:""}
+        <img style={{width:numberOfImages>1?"90%":"100%"}} src={require("./pictures/" + props.props.pictures[imagesIndex])} alt="projectImages" />
+        {numberOfImages>1?<button onClick={()=>(handleImagesSlider(1))}>➡️</button>:""}
+
+      
       </div>
       <h2 className="card-title"><u>{props.props.title}</u></h2>
       <p className="card-title">Tech Stack: {props.props.techStack}</p>

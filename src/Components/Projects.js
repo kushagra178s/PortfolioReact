@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import data from './Data.json';
 import ProjectCard from "./ProjectCard";
 function Projects() {
+  const newData = [...data].sort((a, b) => a.Priority - b.Priority); 
+  // console.log(newData[0].Priority);
   return (
     <div className="main">
       {/* <!-- aboutme --> */}
@@ -22,7 +24,7 @@ function Projects() {
       </div>
       <hr />
       <div className="projects-section">
-        {data.map((item) => {
+        {newData.map((item) => {
           return <ProjectCard key={item.id} props={item}/>            
         })}
       </div>
