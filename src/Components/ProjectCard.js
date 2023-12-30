@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
         <img src={require("./pictures/" + props.props.pictures[0])} alt="" />
       </div>
       <h2 className="card-title"><u>{props.props.title}</u></h2>
-      <p className="card-title">Tech Stack: [ {props.props.techStack} ]</p>
+      <p className="card-title">Tech Stack: {props.props.techStack}</p>
       <div className="card-links">
         <p>
           <a
@@ -28,7 +28,7 @@ const ProjectCard = (props) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Live Link
+              <u><em>Live Link</em></u>
             </a>
           </p>
         ) : (

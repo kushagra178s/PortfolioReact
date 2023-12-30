@@ -16,19 +16,21 @@ body {
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
-  gap: 20px;
   padding-top: 15px;
-  padding-bottom : 10px;
+  padding-bottom : 5px;
   padding-left : 15px;
-  padding-right : 10px;
+  padding-right : 5px;
   height: 40px;
   color: white;
+  justify-content: space-between;
 }
-
-.navbar > li {
+.navbar .navbar-links {
+  display: flex;
   margin-left: 10px;
   font-size: 18px;
   list-style: none;
+  gap: 20px;
+  padding-right:5px;
 }
 
 a {
@@ -50,6 +52,35 @@ a {
 @media (max-width: 767px) {
   .projects-section {
     grid-template-columns: 1fr;
+  }
+  .navbar .navbar-links {
+    /* display: flex;
+    flex-direction:column; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5px;
+    font-size: 18px;
+    list-style: none;
+    gap: 20px;
+    padding-right:5px;
+  }
+  .navbar {
+    /* border: 10px solid red; */
+    background-color: #282c34;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom : 5px;
+    padding-left : 15px;
+    padding-right : 5px;
+    height:fit-content;
+    color: white;
+    /* justify-content: space-between; */
+  }
+  .navbar .logo{
+    margin-bottom:10px;
+    margin-left:5px;
   }
 }
 
@@ -120,3 +151,4 @@ a {
   font-size: 20px; 
   padding-top:10px ; 
 }
+

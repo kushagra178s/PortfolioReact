@@ -4,7 +4,7 @@ export default function Additional() {
     <div className="cp-profiles">
       <h2>
         <strong>
-          <u>My Competitive Programming Profiles : </u>
+          <u>My Competitive Programming Profiles: </u>
         </strong>
       </h2>
       <ul style={{padding:"20px"}}>
