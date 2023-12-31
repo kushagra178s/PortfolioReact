@@ -11,7 +11,7 @@
       "A News website that serves its users with the latest news on various topics like Technology and Sports.",
       "This application is made with the help of newsApi and technologies like ReactJs and bootstrap are used here as well for the design and implementation of the overall website."
     ],
-    "pictures": ["infoNews_sports.png", "infoNews_technology.png"]
+    "pictures": ["infoNews_sports.jpg", "infoNews_technology.jpg"]
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
       "A website that uses power of React.js and openai Api to answer the queries of its users & also gives them ability to select specific models of openai.",
       "This application is made with the help of openai Api and technologies like ReactJs and bootstrap are used here."
     ],
-    "pictures": ["Chatgpt_enhanced.png"]
+    "pictures": ["Chatgpt_enhanced.jpg"]
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
       "A web-based notes-taking app that can take notes from the user and store it within browser local storage so even if the magic notes app window is closed or the browser is closed the notes will remain.",
       "In this app, users will be able to store their notes and delete them as well."
     ],
-    "pictures": ["magicnotes_front.png"]
+    "pictures": ["magicnotes_front.jpg"]
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
       "Develop a lift simulator project that realistically models elevator movements, considering factors like acceleration, deceleration, and door operations.",
       "Create a user-friendly interface allowing easy input of floor requests and simulation of various scenarios. "
     ],
-    "pictures": ["liftsimulator.png"]
+    "pictures": ["liftsimulator.jpg"]
   },  {
     "id": 5,
     "title": "Blog Website",
@@ -69,10 +69,10 @@
       "Optimized MySQL database queries, leading to a 25 percent reduction in response time, thereby boosting performance."
     ],
     "pictures": [
-      "blogwebsite1.png",
-      "blogwebsite2.png",
-      "blogwebsite3.png",
-      "blogwebsite4.png"
+      "blogwebsite1.jpg",
+      "blogwebsite2.jpg",
+      "blogwebsite3.jpg",
+      "blogwebsite4.jpg"
     ]
   }
 ]
