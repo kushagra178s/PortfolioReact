@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react" ;
 import {ThemeContext} from "./Main";
 function Navbar() { 
   const {theme, setTheme} = useContext(ThemeContext);
