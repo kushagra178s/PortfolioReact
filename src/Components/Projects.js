@@ -6,7 +6,6 @@ function Projects() {
   // console.log(newData[0].Priority);
   return (
     <div className="main">
-      {/* <!-- aboutme --> */}
       <div className="about-me">
         <h2 >
           <strong>
@@ -23,6 +22,7 @@ function Projects() {
         <br />
       </div>
       <hr />
+      <h2 style={{margin:"15px"}}><b><u>Projects:</u></b></h2>
       <div className="projects-section">
         {newData.map((item) => {
           return <ProjectCard key={item.id} props={item}/>            
