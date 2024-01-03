@@ -56,13 +56,12 @@ a {
   .navbar .navbar-links {
     /* display: flex;
     flex-direction:column; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 5px;
-    font-size: 18px;
+    display: flex;
+    margin-left: 1%;
+    font-size: 100%;
     list-style: none;
-    gap: 20px;
-    padding-right: 5px;
+    padding-right: 1%;
+    justify-content:flex-start;
   }
   .navbar {
     /* border: 10px solid red; */
