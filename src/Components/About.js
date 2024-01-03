@@ -9,7 +9,7 @@ function About() {
             <u>About Me : </u>
           </strong>
         </h2>
-        <p style={{marginTop:"10px", fontSize:"20px", fontWeight:"500"}}>
+        <p style={{marginLeft:"15px", marginTop:"10px", fontSize:"20px", fontWeight:"500"}}>
           <em>
             {" "}
             My name is kushagra sharma currently pursuing B.tech in computer science engineering. I am seeking career opportunities in an organization that fosters growth, learning, and meaningful projects with a global impact. Committed to working diligently and continuously learning to excel in my endeavors.
