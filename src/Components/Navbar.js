@@ -21,7 +21,7 @@ function Navbar() {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1T-FugaStHsI5UlD-sOgnsGCGQ4zpspa_/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KnAhjMBvCv3bLyWdC6afVLrChvQvyvv5/view?usp=sharing"
             target="_blank"
           >
             <u>
