@@ -61,7 +61,9 @@ a {
     font-size: 100%;
     list-style: none;
     padding-right: 1%;
-    justify-content:flex-start;
+    /* justify-content:space-evenly; */
+    overflow:hidden;
+    flex-wrap: wrap;
   }
   .navbar {
     /* border: 10px solid red; */
