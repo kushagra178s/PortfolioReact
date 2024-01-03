@@ -1,28 +1,11 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import "./App.css";
-import Projects from "./Components/Projects"
-import Additional from "./Components/Additional";
-import Footer from "./Components/Footer"
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Experience from "./Components/Experience";
-function App() 
-{
+import "./App.css"
+import Main from "./Components/Main";
+function App() {
   return (
-    <div className="root">
-      <Navbar />
-      <About/>
-      <hr />
-      <Skills/>
-      <hr />
-      <Projects />
-      <hr />
-      <Experience/>
-      <hr />
-      <Additional/>
-      <Footer/>
+      <div className="root">
+      <Main/>
     </div>
   );
 }
-export default App;
+export default App ;

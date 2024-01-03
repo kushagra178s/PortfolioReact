@@ -1,12 +1,24 @@
-import React from "react";
-function Navbar() {
+import React, { useContext, useEffect, useState } from "react";
+import {ThemeContext} from "./Main";
+function Navbar() { 
+  const {theme, setTheme} = useContext(ThemeContext);
+  // console.log(theme, setTheme);
+  const[currentTheme, setCurrentTheme] = useState(theme);
+  // useEffect(()=>{},[currentTheme])
+  const toggleTheme = () => {
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    setCurrentTheme(newTheme);
+    setTheme(newTheme);
+  };
   return (
     <div className="navbar">
       <div className="logo">
         <strong style={{ fontSize: "20px" }}>Kushagra Sharma </strong>
       </div>
-
       <div className="navbar-links">
+        <li>
+        <button className="mode-button" onClick={toggleTheme} style={{padding:"5px", }}><strong>{currentTheme=="light"? "DarkMode":"LightMode"}</strong></button>
+        </li>
         <li>
           <a
             href="https://drive.google.com/file/d/1T-FugaStHsI5UlD-sOgnsGCGQ4zpspa_/view?usp=sharing"
@@ -52,4 +64,4 @@ function Navbar() {
     </div>
   );
 }
-export default Navbar;
+export default Navbar ;

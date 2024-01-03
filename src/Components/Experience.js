@@ -1,14 +1,11 @@
 import React from "react";
+import {ThemeContext} from "./Main";
 function Experience() {
+  const theme = ThemeContext._currentValue.theme;
+  // console.log(ThemeContext._currentValue.theme);
   return (
-    <div className="main">
+    <div className="main" style={{backgroundColor:`${theme=="light"?"white":"#193D3D"}`, color:`${theme=="light"?"black":"white"}`}}>
       <div className="about-me">
-            {/* Experience
-        Deskera June 2023 – July 2023
-        Software Development Engineer Intern Remote, Singapore
-        • Contributed to the development of an intelligent web-based assistant tool facilitating smooth data migration to the
-        company’s software.
-        • Focused on enhancing the chat system, optimizing the user interface, and building reusable components for data uploads. */}
         <h2>
           <strong>
             <u>Experience: </u>
@@ -31,5 +28,4 @@ function Experience() {
     </div>
   );
 }
-
 export default Experience ;

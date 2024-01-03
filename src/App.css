@@ -13,7 +13,7 @@ body {
 
 .navbar {
   background-color: #282c34;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   display: flex;
   flex-direction: row;
   padding-top: 15px;
@@ -23,6 +23,20 @@ body {
   height: 40px;
   color: white;
   justify-content: space-between;
+}
+
+
+button {
+  cursor: pointer;
+  border: 2px solid #3498db;
+  color: #3498db;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* Hover effect for the button */
+.button:hover {
+  background-color: #3498db;
 }
 .navbar .navbar-links {
   display: flex;
@@ -68,7 +82,7 @@ a {
   .navbar {
     /* border: 10px solid red; */
     background-color: #282c34;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     display: flex;
     flex-direction: column;
     padding-top: 15px;
@@ -92,7 +106,7 @@ a {
   border: 4px solid #e80d94;
   border-radius: 1%;
   margin: 10px; /* Optional spacing between cards */
-  box-shadow: 5px 5px 5px 5px  #38444d91;
+  box-shadow: 5px 5px 5px 5px  black;
   transition: transform 0.2s ease-in-out;
 }
 .card-title {
@@ -133,7 +147,7 @@ a {
 }
 .footer {
   justify-content: center;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 .cp-profiles {

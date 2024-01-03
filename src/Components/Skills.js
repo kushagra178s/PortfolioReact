@@ -1,7 +1,10 @@
 import React from "react";
+import {ThemeContext} from "./Main";
 function Skills() {
+  const theme = ThemeContext._currentValue.theme;
+  // console.log(ThemeContext._currentValue.theme);
   return (
-    <div className="main">
+    <div className="main" style={{backgroundColor:`${theme=="light"?"white":"#193D3D"}`, color:`${theme=="light"?"black":"white"}`}}>
       <div className="about-me">
         <h2>
           <strong>
