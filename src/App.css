@@ -51,6 +51,12 @@ a {
   color: rgb(22, 165, 212);
 }
 
+a:hover {
+  background-color: greenyellow;
+  transition: 0.2s ease-in-out;
+  border-radius: 10%;
+  padding: 5px;
+}
 .about-me {
   padding: 10px;
 }
@@ -147,7 +153,7 @@ a {
 }
 .footer {
   justify-content: center;
-  /* margin-top: 15px; */
+  margin-top: 15px;
 }
 
 .cp-profiles {
@@ -169,4 +175,7 @@ a {
   width: 100%;
   font-size: 20px;
   padding-top: 10px;
+}
+ul>li{
+  margin: 5px;
 }

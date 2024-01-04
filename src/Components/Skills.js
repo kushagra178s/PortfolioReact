@@ -12,13 +12,14 @@ function Skills() {
           </strong>
         </h2>
         <p style={{ marginLeft:"15px", marginTop: "10px", fontSize: "20px", fontWeight: "500" }}>
-          <em>
-            <strong>Languages:</strong> Python , C++ , Java , C , JavaScript ,
+          <p style={{marginBottom:"5px"}}>
+          <strong>Languages:</strong> Python , C++ , Java , C , JavaScript ,
             mySQL
-            <br />
-            <strong>Technologies / Frameworks / Libraries / Tools: </strong> GitHub ,
+          </p>
+          <p>
+          <strong>Technologies / Frameworks / Libraries / Tools: </strong> GitHub ,
             Git , MongoDB , Express , ReactJS , NodeJS, SpringBoot
-          </em>
+          </p>
         </p>
         <br />
       </div>

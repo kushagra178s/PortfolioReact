@@ -12,15 +12,19 @@ function Experience() {
           </strong>
         </h2>
         <p style={{ marginLeft:"15px", marginTop: "10px", fontSize: "20px", fontWeight: "500" }}>
-          <em>
+          <em  >
             <strong>Deskera </strong> [June 2023 - July 2023]
             <br />
-            <strong>Software Development Engineer Intern  </strong>  (Remote, Singapore) 
+           <p><strong>Software Development Engineer Intern  </strong>  (Remote, Singapore)
+            </p>  
             <br />
-                • Contributed to the development of an intelligent web-based assistant tool facilitating smooth data migration to the
-                company’s software.
-            <br />
-                • Focused on enhancing the chat system, optimizing the user interface, and building reusable components for data uploads.
+            <p style={{marginBottom:"5px"}}>
+            • Contributed to the development of an intelligent web-based assistant tool facilitating smooth data migration to the
+                company's software.
+            </p>
+            <p>
+            • Focused on enhancing the chat system, optimizing the user interface, and building reusable components for data uploads.
+            </p>                
           </em>
         </p>
         <br />
