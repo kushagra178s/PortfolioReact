@@ -2,15 +2,15 @@ import React from "react";
 import {ThemeContext} from "./Main";
 export default function Additional() {
   const theme = ThemeContext._currentValue.theme;
-  // console.log(ThemeContext._currentValue.theme);
+  // console.log(ThemeContext._currentValue.theme)
   return (
     <div className="main" style={{backgroundColor:`${theme=="light"?"white":"#193D3D"}`, color:`${theme=="light"?"black":"white"}`}}>
-      <div className="about-me">
-        <h2>
+      <h2 style={{padding:"2%", textAlign:"center",marginLeft:"15px", paddingTop:"15px"}}>
           <strong>
             <u>My Competitive Programming Profiles: </u>
           </strong>
         </h2>
+      <div className="additional">
         <ul
           style={{
             marginLeft: "25px",
@@ -19,7 +19,7 @@ export default function Additional() {
             fontWeight: "500",
           }}
         >
-          <li>
+          <li >
               LeetCode solved 1061+ questions and current Contest rating is 1791
               (max rating).
             {" "}

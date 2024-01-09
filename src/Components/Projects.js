@@ -14,7 +14,7 @@ function Projects() {
   // console.log(newData[0].Priority);
   return (
     <div className="main" style={{backgroundColor:`${theme=="light"?"white":"#193D3D"}`, color:`${theme=="light"?"black":"white"}`}}>
-      <h2 style={{marginLeft:"15px", paddingTop:"15px"}}><b><u>Projects:</u></b></h2>
+      <h1 style={{padding:"2%", textAlign:"center",marginLeft:"15px", paddingTop:"15px"}}><b><u>Projects:</u></b></h1>
       <div className="projects-section">
         {newData.map((item) => {
           return <ProjectCard key={item.id} props={item}/>            
