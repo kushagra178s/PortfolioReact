@@ -3,6 +3,18 @@ import {ThemeContext} from "./Main";
 function Navbar() { 
   const {theme, setTheme} = useContext(ThemeContext);
   // console.log(theme, setTheme);
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const[currentTheme, setCurrentTheme] = useState(theme);
   // useEffect(()=>{},[currentTheme])
   const toggleTheme = () => {
@@ -11,7 +23,7 @@ function Navbar() {
     setTheme(newTheme);
   };
   return (
-    <div className="navbar">
+    <div className={`navbar ${isSticky ? 'sticky' : ''}`} >
       <div className="logo">
         <strong style={{ fontSize: "20px" }}>Kushagra Sharma </strong>
       </div>
