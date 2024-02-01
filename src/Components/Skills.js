@@ -19,11 +19,11 @@ function Skills() {
           marginLeft: "15px",
         }}
       >
-        <h1>
+        <h2>
         <strong>
           <u>Technical Skills: </u>
         </strong>
-        </h1>
+        </h2>
        
       </p>
       <div className="technical-skills">

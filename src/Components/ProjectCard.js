@@ -71,7 +71,7 @@ const ProjectCard = (props) => {
         )}
       </div>
 
-      <h2>Project Description:</h2>
+      <u>Project Description:</u>
       <ul style={{ listStyle: "inherit", padding: "15px" }}>
         {props.props.projectDescription.map((item, index) => (
           <li key={index}>{item}</li>
