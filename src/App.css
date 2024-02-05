@@ -109,20 +109,20 @@ a:hover {
   gap: 10px;
 }
 
-
 .skill-card {
   display: flex;
   background-color: #282c34ca;
   color: white;
   padding: 5px;
-  img{
-    width: 25px;
-  }
   border: 2px solid black;
   gap: 5px;
   /* border-radius: 1%; */
   transition: 0.4s ease-in-out;
 }
+.skill-card img{
+  width: 25px;
+}
+
 .skill-card:hover {
   margin: 2px;
   background-color: #b9294d;
