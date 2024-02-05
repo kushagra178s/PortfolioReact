@@ -12,7 +12,7 @@ function About() {
             <u>Intoduction: </u>
           </strong>
         </h2>
-        <p style={{paddingTop:"5%",marginLeft:"15px", marginTop:"10px", fontSize:"20px", fontWeight:"500"}}>
+        <p style={{paddingTop:"2%",marginLeft:"15px", marginTop:"10px", fontSize:"20px", fontWeight:"500"}}>
           <em>
             {" "}
             My name is kushagra sharma currently pursuing B.tech in computer science engineering. I am seeking career opportunities in an organization that fosters growth, learning, and meaningful projects with a global impact. Committed to working diligently and continuously learning to excel in my endeavors.

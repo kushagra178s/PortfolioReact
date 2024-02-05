@@ -13,41 +13,82 @@ function Skills() {
     >
       <p
         style={{
-          padding:"2%",
-          textAlign:"center",
+          padding: "2%",
+          textAlign: "center",
           paddingTop: "10px",
           marginLeft: "15px",
         }}
       >
         <h2>
-        <strong>
-          <u>Technical Skills: </u>
-        </strong>
+          <strong>
+            <u>Technical Skills: </u>
+          </strong>
         </h2>
-       
       </p>
       <div className="technical-skills">
         <div className="skill-container">
           <strong>Languages:</strong>
           <p className="skills-showcase">
-            <div className="skill-card">Python</div>
-            <div className="skill-card"> C++</div>
-            <div className="skill-card">Java</div>
-            <div className="skill-card">C</div>
-            <div className="skill-card">JavaScript</div>
-            <div className="skill-card">mySQL</div>
+            <div className="skill-card">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/free-python-20-1175115.png"
+                alt=""
+              />
+              Python
+            </div>
+            <div className="skill-card"> <img
+                src={require("../icons/c++.png")}
+                alt=""
+              /> C++</div>
+            <div className="skill-card"> <img
+                src={require("../icons/java.png")}
+                alt=""
+              /> Java</div>
+            <div className="skill-card"> <img
+                src={require("../icons/c.png")}
+                alt=""
+              /> C</div>
+            <div className="skill-card"> <img
+                src={require("../icons/javascript.png")}
+                alt=""
+              /> JavaScript</div>
+            <div className="skill-card"> <img
+                src={require("../icons/mysql.png")}
+                alt=""
+              /> SQL</div>
           </p>
         </div>
         <div className="skill-container">
           <strong>Technologies: </strong>
           <p className="skills-showcase">
-            <div className="skill-card">GitHub</div>
-            <div className="skill-card">Git</div>
-            <div className="skill-card">MongoDB</div>
-            <div className="skill-card">Express</div>
-            <div className="skill-card">ReactJS</div>
-            <div className="skill-card">NodeJS</div>
-            <div className="skill-card">SpringBoot</div>
+            <div className="skill-card"> <img
+                src={require("../icons/github.png")}
+                alt=""
+              /> GitHub</div>
+            <div className="skill-card"> <img
+                src={require("../icons/git.png")}
+                alt=""
+              /> Git</div>
+            <div className="skill-card"> <img
+                src={require("../icons/mongodb.png")}
+                alt=""
+              /> MongoDB</div>
+            <div className="skill-card"> <img
+                src={require("../icons/express.png")}
+                alt=""
+              /> Express</div>
+            <div className="skill-card"> <img
+                src={require("../icons/reactjs.png")}
+                alt=""
+              /> ReactJS</div>
+            <div className="skill-card"> <img
+                src={require("../icons/nodejs.png")}
+                alt=""
+              /> NodeJS</div>
+            <div className="skill-card"> <img
+                src={require("../icons/springbootpng.png")}
+                alt=""
+              /> SpringBoot</div>
           </p>
         </div>
       </div>

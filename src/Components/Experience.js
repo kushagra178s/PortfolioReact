@@ -19,16 +19,18 @@ function Experience() {
         </h2>
         <div className="experience-card">
           <div className="experience-company">
-            <div>Deskera [June 2023 - July 2023]</div>
-            <div>Software Development Engineer Intern </div>
+            <div>Deskera</div>
+            <div>[June 2023 - July 2023]</div>
+            <div>SDE Intern</div>
             <div>(Remote, Singapore)</div>
           </div>
-          <div className="experience-description">
+          <div className="experience-description" >
             • Contributed to the development of an intelligent web-based
             assistant tool facilitating smooth data migration to the company's
             software.
             <br />
-            <br />• Focused on enhancing the chat system, optimizing the user
+            <br />
+            • Focused on enhancing the chat system, optimizing the user
             interface, and building reusable components for data uploads.
           </div>
         </div>
