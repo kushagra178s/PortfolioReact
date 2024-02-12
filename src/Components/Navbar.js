@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from "react" ;
-import {ThemeContext} from "./Main";
-function Navbar() { 
-  const {theme, setTheme} = useContext(ThemeContext);
+import React, { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "./Main";
+function Navbar() {
+  const { theme, setTheme } = useContext(ThemeContext);
   // console.log(theme, setTheme);
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
@@ -9,13 +9,13 @@ function Navbar() {
       setIsSticky(window.scrollY > 0);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const[currentTheme, setCurrentTheme] = useState(theme);
+  const [currentTheme, setCurrentTheme] = useState(theme);
   // useEffect(()=>{},[currentTheme])
   const toggleTheme = () => {
     const newTheme = currentTheme === "light" ? "dark" : "light";
@@ -23,13 +23,17 @@ function Navbar() {
     setTheme(newTheme);
   };
   return (
-    <div className={`navbar ${isSticky ? 'sticky' : ''}`} >
+    <div className={`navbar ${isSticky ? "sticky" : ""}`}>
       <div className="logo">
         <strong style={{ fontSize: "20px" }}>Kushagra Sharma </strong>
       </div>
       <div className="navbar-links">
         <li>
-        <button className="mode-button" onClick={toggleTheme} style={{padding:"5px", }}><strong>{currentTheme=="light"? "DarkMode":"LightMode"}</strong></button>
+          <button className="mode-button" onClick={toggleTheme}>
+            <p>
+              {currentTheme == "light" ? "DarkMode" : "LightMode"}
+            </p>
+          </button>
         </li>
         <li>
           <a
@@ -76,4 +80,4 @@ function Navbar() {
     </div>
   );
 }
-export default Navbar ;
+export default Navbar;
