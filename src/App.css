@@ -81,7 +81,6 @@ a:hover {
 
 .technical-skills {
   /* border: 5px solid red; */
-  
   margin-left: 15px;
   font: 500;
   font-size: 20px;
@@ -92,6 +91,7 @@ a:hover {
 }
 .technical-skills .skills-showcase {
   /* border: 2px solid red; */
+  margin-left: 10px;
   display: flex;
   gap: 10px;
   overflow: hidden;
@@ -99,27 +99,29 @@ a:hover {
 }
 
 .skill-container {
+  /* border: 2px solid red; */
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .skill-card {
+  /* border: 2px solid red; */
   display: flex;
   background-color: #282c34ca;
   color: white;
-  padding: 5px;
+  padding: 2px;
   border: 2px solid black;
   gap: 5px;
   /* border-radius: 1%; */
   transition: 0.4s ease-in-out;
 }
 .skill-card img{
-  width: 25px;
+  width: 20px;
 }
 
 .skill-card:hover {
-  margin: 2px;
-  background-color: #b9294d;
+  margin: 1px;
+  background-color: greenyellow;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
 }
 
