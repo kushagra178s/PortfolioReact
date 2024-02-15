@@ -30,9 +30,7 @@ function Navbar() {
       <div className="navbar-links">
         <li>
           <button className="mode-button" onClick={toggleTheme}>
-            <p>
-              {currentTheme == "light" ? "DarkMode" : "LightMode"}
-            </p>
+            <img src={require("../icons/darkmode.png")} alt="" />
           </button>
         </li>
         <li>
