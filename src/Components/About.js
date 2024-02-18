@@ -9,7 +9,7 @@ function About() {
       <div className="about-me">
         <h2>
           <strong>
-            <u>Intoduction: </u>
+            <u>Introduction: </u>
           </strong>
         </h2>
         <p style={{paddingTop:"2%",marginLeft:"15px", marginTop:"10px", fontSize:"20px", fontWeight:"500"}}>
